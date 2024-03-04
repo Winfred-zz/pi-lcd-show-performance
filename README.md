@@ -13,3 +13,5 @@ Once you have followed these guides, you will have a working hd44780 LCD that is
 i2c_lib.py and lcddriver.py are the commonly available and used libraries.
 
 lcdshowstatus.py can be scheduled with a cronjob and will display the current memory % usage and CPU percentage usage.
+
+[See here for more details](https://winfred.com/projects/pi-lcd-show-performance/)
