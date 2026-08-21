@@ -37,4 +37,8 @@ which checks out the new code into `/opt/pi-lcd-show-performance` and restarts `
 
 Logs are written to `/var/log/lcdshowstatus.log`; check `journalctl -u lcdshowstatus` for service-level (start/stop/restart) events.
 
+To check the service status: `sudo systemctl status lcdshowstatus.service`
+
+To see the latest logs: `tail -f /var/log/lcdshowstatus.log`
+
 [See here for more details](https://winfred.com/projects/pi-lcd-show-performance/)
