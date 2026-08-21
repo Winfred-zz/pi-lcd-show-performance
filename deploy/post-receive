@@ -1,0 +1,10 @@
+#!/bin/sh
+# Git post-receive hook. Installed by setup-pi.sh into the bare repo's
+# hooks/ directory. Runs on the Pi every time you `git push pi main`.
+set -e
+
+WORK_TREE=/opt/pi-lcd-show-performance
+GIT_DIR=/opt/pi-lcd-show-performance.git
+
+git --work-tree="$WORK_TREE" --git-dir="$GIT_DIR" checkout -f main
+sudo /usr/bin/systemctl restart lcdshowstatus.service
